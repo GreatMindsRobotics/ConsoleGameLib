@@ -49,5 +49,20 @@ namespace ConsoleGameLib.CoreTypes
             // Struct, so no need for null check
             return left.X != right.X || left.Y != right.Y;
         }
+
+        public static Point operator +(Point left, Point right)
+        {
+            return new Point(left.X + right.X, left.Y + right.Y);
+        }
+
+        public static Point operator -(Point left, Point right)
+        {
+            return new Point(left.X - right.X, left.Y - right.Y);
+        }
+
+        public static Point operator -(Point unary)
+        {
+            return new Point(-unary.X, -unary.Y);
+        }
     }
 }
