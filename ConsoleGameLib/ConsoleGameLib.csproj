@@ -55,7 +55,13 @@
     <Compile Include="CoreTypes\Point.cs" />
     <Compile Include="CoreTypes\Size.cs" />
     <Compile Include="Helpers\GameState.cs" />
+    <Compile Include="Helpers\MathHelper.cs" />
+    <Compile Include="PhysicsTypes\PhysicsExtensions.cs" />
+    <Compile Include="PhysicsTypes\PhysicsObject.cs" />
+    <Compile Include="PhysicsTypes\PhysicsPoint.cs" />
+    <Compile Include="PhysicsTypes\PhysicsWorld.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PhysicsTypes\UserControlledPoint.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
