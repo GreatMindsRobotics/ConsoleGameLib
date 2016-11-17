@@ -59,5 +59,15 @@ namespace ConsoleGameLib.CoreTypes
         {
             return new Size(left.Width - right.Width, left.Height - right.Height);
         }
+
+        public static Size operator *(Size point, int scalar)
+        {
+            return new Size(point.Width * scalar, point.Height * scalar);
+        }
+
+        public static Size operator /(Size point, int scalar)
+        {
+            return new Size(point.Width / scalar, point.Width / scalar);
+        }
     }
 }
