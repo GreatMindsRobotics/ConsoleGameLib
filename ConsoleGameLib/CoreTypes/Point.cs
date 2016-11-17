@@ -64,5 +64,15 @@ namespace ConsoleGameLib.CoreTypes
         {
             return new Point(-unary.X, -unary.Y);
         }
+
+        public static Point operator *(Point point, int scalar)
+        {
+            return new Point(point.X * scalar, point.Y * scalar);
+        }
+
+        public static Point operator /(Point point, int scalar)
+        {
+            return new Point(point.X / scalar, point.Y / scalar);
+        }
     }
 }
